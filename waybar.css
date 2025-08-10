@@ -1,0 +1,123 @@
+@define-color foreground #e8e6e3;  /* Marble white */
+@define-color background #1c2128;  /* Temple stone shadow */
+@define-color primary #7ec8c8;     /* Turquoise patina */
+@define-color secondary #7ea67c;   /* Jade green */
+@define-color success #7ea67c;     /* Jade green */
+@define-color danger #cd9575;      /* Terracotta warning */
+@define-color warning #d4af37;     /* Temple gold */
+@define-color info #6b8cae;        /* Sky through columns */
+@define-color light #f4e4bc;       /* Pearl white */
+@define-color dark #2c3640;        /* Deep slate shadow */
+@define-color muted #4a5568;       /* Weathered stone */
+@define-color accent #d4af37;      /* Temple gold - sacred moments */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(26, 31, 46, 0.95);
+    color: @foreground;
+    border-bottom: 2px solid @primary;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: @muted;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    background: rgba(97, 175, 239, 0.15);
+    color: @primary;
+    border-bottom: 3px solid @primary;
+}
+
+#workspaces button.urgent {
+    background: rgba(224, 108, 117, 0.15);
+    color: @danger;
+    border-bottom: 3px solid @danger;
+}
+
+#workspaces button:hover {
+    background: rgba(152, 195, 121, 0.15);
+    color: @secondary;
+}
+
+#cpu, #memory, #temperature, #network, #pulseaudio, #battery, #clock {
+    padding: 0 10px;
+    color: @foreground;
+}
+
+#cpu {
+    color: @primary;
+}
+
+#memory {
+    color: @secondary;
+}
+
+#temperature {
+    color: @info;
+}
+
+#temperature.critical {
+    background: @danger;
+    color: @background;
+    font-weight: bold;
+}
+
+#network {
+    color: @info;
+}
+
+#network.disconnected {
+    color: @muted;
+}
+
+#pulseaudio {
+    color: @warning;
+}
+
+#pulseaudio.muted {
+    color: @muted;
+}
+
+#battery {
+    color: @success;
+}
+
+#battery.warning:not(.charging) {
+    color: @warning;
+}
+
+#battery.critical:not(.charging) {
+    background: @danger;
+    color: @background;
+    animation: blink 1s linear infinite alternate;
+}
+
+#battery.charging {
+    color: @accent;
+}
+
+#clock {
+    color: @light;
+    font-weight: bold;
+}
+
+tooltip {
+    background: @dark;
+    border: 1px solid @primary;
+    border-radius: 5px;
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(224, 108, 117, 0.5);
+        color: @danger;
+    }
+}

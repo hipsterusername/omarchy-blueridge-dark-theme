@@ -1,0 +1,73 @@
+@define-color selected-text #d4af37;  /* Temple gold - sacred */
+@define-color text #e8e6e3;           /* Marble white */
+@define-color base #1c2128;           /* Temple stone shadow */
+@define-color surface #2c3640;        /* Deep slate shadow */
+@define-color overlay #4a5568;        /* Weathered stone */
+@define-color muted #c4b5a0;          /* Papyrus */
+@define-color subtle #7ec8c8;         /* Turquoise patina */
+@define-color border #7ea67c;         /* Jade green */
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#window {
+    background: rgba(26, 31, 46, 0.97);
+    border: 2px solid @border;
+    border-radius: 10px;
+}
+
+#box {
+    padding: 20px;
+}
+
+#search {
+    background: @surface;
+    border: 2px solid @subtle;
+    border-radius: 5px;
+    padding: 10px;
+    color: @text;
+    font-size: 14px;
+}
+
+#search:focus {
+    border-color: @selected-text;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+#list {
+    margin-top: 10px;
+}
+
+#entry {
+    padding: 10px;
+    margin: 5px 0;
+    background: @surface;
+    border-radius: 5px;
+    color: @text;
+    border-left: 3px solid transparent;
+}
+
+#entry:hover {
+    background: @overlay;
+    border-left: 3px solid @subtle;
+}
+
+#entry:selected {
+    background: linear-gradient(90deg, rgba(97, 175, 239, 0.15), rgba(152, 195, 121, 0.15));
+    border-left: 3px solid @selected-text;
+    color: @selected-text;
+}
+
+#entry #icon {
+    margin-right: 10px;
+}
+
+#entry #name {
+    font-weight: bold;
+}
+
+#entry #description {
+    color: @muted;
+    font-size: 12px;
+}
