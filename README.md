@@ -2,6 +2,9 @@
 
 A moderately dark theme inspired by mountain landscapes at dawn, combining cool slate grays with warm morning tones, accented by forest greens and mountain streams. This theme embodies the tranquil strength of mountain ridges.
 
+<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/bb7ad98b-eef5-48ff-8029-e385ab67d8fa" />
+
+
 ## Design Philosophy: Mountain Serenity
 
 This theme uses a **cool/warm complementary split** color theory:
@@ -52,7 +55,7 @@ The result is a serene yet vibrant environment that promotes contemplation while
 - **System Monitors**: Gradients flow from jade through patina to temple gold
 
 ### User Experience
-- **Lock Screen**: "Within ancient stone lies eternal wisdom" - contemplative entry
+- **Lock Screen**: Mountains and reflection.
 - **Application Launcher**: Temple gold highlights for selected items
 - **Progress Indicators**: Jade to patina gradients showing advancement
 - **Bright Moments**: Pearl white and temple gold for peak clarity and breakthroughs
@@ -74,27 +77,12 @@ The result is a serene yet vibrant environment that promotes contemplation while
 2. Add a temple or architectural wallpaper to `backgrounds/1-sage-resilience.jpg`
 3. Apply the theme using your theme switcher
 
-## Wallpaper Suggestions
-Look for images featuring:
-- Ancient temple architecture (Greek, Roman, Eastern)
-- Stone columns with natural lighting
-- Marble textures and patterns
-- Archaeological sites at golden hour
-- Abstract geometric patterns in stone tones
-- Libraries or museums with classical architecture
-
 ## Design Principles
 1. **Cool/Warm Balance**: Cool stones balanced with warm papyrus and gold
 2. **Timeless Aesthetics**: Colors that have endured millennia
 3. **Strategic Brightness**: Pearl and gold used for emphasis and clarity
 4. **Natural Patina**: Turquoise and jade represent time's wisdom
 5. **Serene Strength**: Calm base colors with vibrant accents where needed
-
-## Color Theory Notes
-- **Split-Complementary Scheme**: Blue-grays (cool) split with yellow-greens and yellow-oranges (warm)
-- **Psychological Impact**: Stone conveys permanence and reliability, gold suggests value and achievement
-- **Contrast Ratios**: Marble white on temple shadow provides excellent readability
-- **Cultural Significance**: Temple aesthetics cross cultures, representing universal wisdom
 
 ## Notes
 - Optimized for extended contemplative work sessions
